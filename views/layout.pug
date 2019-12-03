@@ -1,7 +1,558 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    title Saúde
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='/css/open-iconic-bootstrap.min.css')
+    link(rel='stylesheet', href='/css/animate.css')
+    link(rel='stylesheet', href='/css/owl.carousel.min.css')
+    link(rel='stylesheet', href='/css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='/css/magnific-popup.css')
+    link(rel='stylesheet', href='/css/aos.css')
+    link(rel='stylesheet', href='/css/ionicons.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-datepicker.css')
+    link(rel='stylesheet', href='/css/jquery.timepicker.css')
+    link(rel='stylesheet', href='/css/flaticon.css')
+    link(rel='stylesheet', href='/css/icomoon.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='../')
+  body.goto-here
+    .py-1.bg-primary
+      .container
+        .row.no-gutters.d-flex.align-items-start.align-items-center.px-md-0
+          .col-lg-12.d-block
+            .row.d-flex
+              .col-md.pr-4.d-flex.topper.align-items-center
+                .icon.mr-2.d-flex.justify-content-center.align-items-center
+                  span.icon-phone2
+                span.text + 1235 2355 98
+              .col-md.pr-4.d-flex.topper.align-items-center
+                .icon.mr-2.d-flex.justify-content-center.align-items-center
+                  span.icon-paper-plane
+                span.text youremail@email.com
+              .col-md-5.pr-4.d-flex.topper.align-items-center.text-lg-right
+                span.text 3-5 Business days delivery & Free Returns
+    nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
+      .container
+        a.navbar-brand(href='index.html') Vida saudável
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#ftco-nav', aria-controls='ftco-nav', aria-expanded='false', aria-label='Toggle navigation')
+          span.oi.oi-menu
+          |  Menu
+        #ftco-nav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='index.html') Home
+            li.nav-item.dropdown
+              a#dropdown04.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Shop
+              .dropdown-menu(aria-labelledby='dropdown04')
+                a.dropdown-item(href='shop.html') Shop
+                a.dropdown-item(href='wishlist.html') Wishlist
+                a.dropdown-item(href='product-single.html') Single Product
+                a.dropdown-item(href='cart.html') Cart
+                a.dropdown-item(href='checkout.html') Checkout
+            li.nav-item
+              a.nav-link(href='about.html') About
+            li.nav-item
+              a.nav-link(href='blog.html') Blog
+            li.nav-item
+              a.nav-link(href='contact.html') Contact
+            li.nav-item.cta.cta-colored
+              a.nav-link(href='cart.html')
+                span.icon-shopping_cart
+                | [0]
+    // END nav
+    section#home-section.hero
+      .home-slider.owl-carousel
+        .slider-item(style='background-image: url(images/bg_1.jpg);')
+          .overlay
+          .container
+            .row.slider-text.justify-content-center.align-items-center(data-scrollax-parent='true')
+              .col-md-12.ftco-animate.text-center
+                h1.mb-2 We serve Fresh Vegestables & Fruits
+                h2.subheading.mb-4 We deliver organic vegetables & fruits
+                p
+                  a.btn.btn-primary(href='#') View Details
+        .slider-item(style='background-image: url(images/bg_2.jpg);')
+          .overlay
+          .container
+            .row.slider-text.justify-content-center.align-items-center(data-scrollax-parent='true')
+              .col-sm-12.ftco-animate.text-center
+                h1.mb-2 100% Fresh & Organic Foods
+                h2.subheading.mb-4 We deliver organic vegetables & fruits
+                p
+                  a.btn.btn-primary(href='#') View Details
+    section.ftco-section
+      .container
+        .row.no-gutters.ftco-services
+          .col-md-3.text-center.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.mb-md-0.mb-4
+              .icon.bg-color-1.active.d-flex.justify-content-center.align-items-center.mb-2
+                span.flaticon-shipped
+              .media-body
+                h3.heading Free Shipping
+                span On order over $100
+          .col-md-3.text-center.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.mb-md-0.mb-4
+              .icon.bg-color-2.d-flex.justify-content-center.align-items-center.mb-2
+                span.flaticon-diet
+              .media-body
+                h3.heading Always Fresh
+                span Product well package
+          .col-md-3.text-center.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.mb-md-0.mb-4
+              .icon.bg-color-3.d-flex.justify-content-center.align-items-center.mb-2
+                span.flaticon-award
+              .media-body
+                h3.heading Superior Quality
+                span Quality Products
+          .col-md-3.text-center.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.mb-md-0.mb-4
+              .icon.bg-color-4.d-flex.justify-content-center.align-items-center.mb-2
+                span.flaticon-customer-service
+              .media-body
+                h3.heading Support
+                span 24/7 Support
+    section.ftco-section.ftco-category.ftco-no-pt
+      .container
+        .row
+          .col-md-8
+            .row
+              .col-md-6.order-md-last.align-items-stretch.d-flex
+                .category-wrap-2.ftco-animate.img.align-self-stretch.d-flex(style='background-image: url(images/category.jpg);')
+                  .text.text-center
+                    h2 Vegetables
+                    p Protect the health of every home
+                    p
+                      a.btn.btn-primary(href='#') Shop now
+              .col-md-6
+                .category-wrap.ftco-animate.img.mb-4.d-flex.align-items-end(style='background-image: url(images/category-1.jpg);')
+                  .text.px-3.py-1
+                    h2.mb-0
+                      a(href='#') Fruits
+                .category-wrap.ftco-animate.img.d-flex.align-items-end(style='background-image: url(images/category-2.jpg);')
+                  .text.px-3.py-1
+                    h2.mb-0
+                      a(href='#') Vegetables
+          .col-md-4
+            .category-wrap.ftco-animate.img.mb-4.d-flex.align-items-end(style='background-image: url(images/category-3.jpg);')
+              .text.px-3.py-1
+                h2.mb-0
+                  a(href='#') Juices
+            .category-wrap.ftco-animate.img.d-flex.align-items-end(style='background-image: url(images/category-4.jpg);')
+              .text.px-3.py-1
+                h2.mb-0
+                  a(href='#') Dried
+    section.ftco-section
+      .container
+        .row.justify-content-center.mb-3.pb-3
+          .col-md-12.heading-section.text-center.ftco-animate
+            span.subheading Featured Products
+            h2.mb-4 Our Products
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+      .container
+        .row
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-1.jpg', alt='Colorlib Template')
+                span.status 30%
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Bell Pepper
+                .d-flex
+                  .pricing
+                    p.price
+                      span.mr-2.price-dc $120.00
+                      span.price-sale $80.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-2.jpg', alt='Colorlib Template')
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Strawberry
+                .d-flex
+                  .pricing
+                    p.price
+                      span $120.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-3.jpg', alt='Colorlib Template')
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Green Beans
+                .d-flex
+                  .pricing
+                    p.price
+                      span $120.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-4.jpg', alt='Colorlib Template')
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Purple Cabbage
+                .d-flex
+                  .pricing
+                    p.price
+                      span $120.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-5.jpg', alt='Colorlib Template')
+                span.status 30%
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Tomatoe
+                .d-flex
+                  .pricing
+                    p.price
+                      span.mr-2.price-dc $120.00
+                      span.price-sale $80.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-6.jpg', alt='Colorlib Template')
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Brocolli
+                .d-flex
+                  .pricing
+                    p.price
+                      span $120.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-7.jpg', alt='Colorlib Template')
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Carrots
+                .d-flex
+                  .pricing
+                    p.price
+                      span $120.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+          .col-md-6.col-lg-3.ftco-animate
+            .product
+              a.img-prod(href='#')
+                img.img-fluid(src='images/product-8.jpg', alt='Colorlib Template')
+                .overlay
+              .text.py-3.pb-4.px-3.text-center
+                h3
+                  a(href='#') Fruit Juice
+                .d-flex
+                  .pricing
+                    p.price
+                      span $120.00
+                .bottom-area.d-flex.px-3
+                  .m-auto.d-flex
+                    a.add-to-cart.d-flex.justify-content-center.align-items-center.text-center(href='#')
+                      span
+                        i.ion-ios-menu
+                    a.buy-now.d-flex.justify-content-center.align-items-center.mx-1(href='#')
+                      span
+                        i.ion-ios-cart
+                    a.heart.d-flex.justify-content-center.align-items-center(href='#')
+                      span
+                        i.ion-ios-heart
+    section.ftco-section.img(style='background-image: url(images/bg_3.jpg);')
+      .container
+        .row.justify-content-end
+          .col-md-6.heading-section.ftco-animate.deal-of-the-day.ftco-animate
+            span.subheading Best Price For You
+            h2.mb-4 Deal of the day
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+            h3
+              a(href='#') Spinach
+            span.price
+              | $10 
+              a(href='#') now $5 only
+            #timer.d-flex.mt-5
+              #days.time
+              #hours.time.pl-3
+              #minutes.time.pl-3
+              #seconds.time.pl-3
+    section.ftco-section.testimony-section
+      .container
+        .row.justify-content-center.mb-5.pb-3
+          .col-md-7.heading-section.ftco-animate.text-center
+            span.subheading Testimony
+            h2.mb-4 Our satisfied customer says
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+        .row.ftco-animate
+          .col-md-12
+            .carousel-testimony.owl-carousel
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_1.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text.text-center
+                    p.mb-5.pl-4.line
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Garreth Smith
+                    span.position Marketing Manager
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_2.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text.text-center
+                    p.mb-5.pl-4.line
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Garreth Smith
+                    span.position Interface Designer
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_3.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text.text-center
+                    p.mb-5.pl-4.line
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Garreth Smith
+                    span.position UI Designer
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_1.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text.text-center
+                    p.mb-5.pl-4.line
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Garreth Smith
+                    span.position Web Developer
+              .item
+                .testimony-wrap.p-4.pb-5
+                  .user-img.mb-5(style='background-image: url(images/person_1.jpg)')
+                    span.quote.d-flex.align-items-center.justify-content-center
+                      i.icon-quote-left
+                  .text.text-center
+                    p.mb-5.pl-4.line
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    p.name Garreth Smith
+                    span.position System Analyst
+    hr
+    section.ftco-section.ftco-partner
+      .container
+        .row
+          .col-sm.ftco-animate
+            a.partner(href='#')
+              img.img-fluid(src='images/partner-1.png', alt='Colorlib Template')
+          .col-sm.ftco-animate
+            a.partner(href='#')
+              img.img-fluid(src='images/partner-2.png', alt='Colorlib Template')
+          .col-sm.ftco-animate
+            a.partner(href='#')
+              img.img-fluid(src='images/partner-3.png', alt='Colorlib Template')
+          .col-sm.ftco-animate
+            a.partner(href='#')
+              img.img-fluid(src='images/partner-4.png', alt='Colorlib Template')
+          .col-sm.ftco-animate
+            a.partner(href='#')
+              img.img-fluid(src='images/partner-5.png', alt='Colorlib Template')
+    section.ftco-section.ftco-no-pt.ftco-no-pb.py-5.bg-light
+      .container.py-4
+        .row.d-flex.justify-content-center.py-5
+          .col-md-6
+            h2.mb-0(style='font-size: 22px;') Subcribe to our Newsletter
+            span Get e-mail updates about our latest shops and special offers
+          .col-md-6.d-flex.align-items-center
+            form.subscribe-form(action='#')
+              .form-group.d-flex
+                input.form-control(type='text', placeholder='Enter email address')
+                input.submit.px-3(type='submit', value='Subscribe')
+    footer.ftco-footer.ftco-section
+      .container
+        .row
+          .mouse
+            a.mouse-icon(href='#')
+              .mouse-wheel
+                span.ion-ios-arrow-up
+        .row.mb-5
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Vegefoods
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+              ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-twitter
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-facebook
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-instagram
+          .col-md
+            .ftco-footer-widget.mb-4.ml-md-5
+              h2.ftco-heading-2 Menu
+              ul.list-unstyled
+                li
+                  a.py-2.d-block(href='#') Shop
+                li
+                  a.py-2.d-block(href='#') About
+                li
+                  a.py-2.d-block(href='#') Journal
+                li
+                  a.py-2.d-block(href='#') Contact Us
+          .col-md-4
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Help
+              .d-flex
+                ul.list-unstyled.mr-l-5.pr-l-3.mr-4
+                  li
+                    a.py-2.d-block(href='#') Shipping Information
+                  li
+                    a.py-2.d-block(href='#') Returns & Exchange
+                  li
+                    a.py-2.d-block(href='#') Terms & Conditions
+                  li
+                    a.py-2.d-block(href='#') Privacy Policy
+                ul.list-unstyled
+                  li
+                    a.py-2.d-block(href='#') FAQs
+                  li
+                    a.py-2.d-block(href='#') Contact
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Have a Questions?
+              .block-23.mb-3
+                ul
+                  li
+                    span.icon.icon-map-marker
+                    span.text 203 Fake St. Mountain View, San Francisco, California, USA
+                  li
+                    a(href='#')
+                      span.icon.icon-phone
+                      span.text +2 392 3929 210
+                  li
+                    a(href='#')
+                      span.icon.icon-envelope
+                      span.text info@yourdomain.com
+        .row
+          .col-md-12.text-center
+            p
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              | Copyright ©
+              script.
+                document.write(new Date().getFullYear());
+              |  All rights reserved | This template is made with 
+              i.icon-heart.color-danger(aria-hidden='true')
+              |  by 
+              a(href='https://colorlib.com', target='_blank') Colorlib
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              // loader
+              #ftco-loader.show.fullscreen
+                svg.circular(width='48px', height='48px')
+                  circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+                  circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
+              block content
+              script(src='js/jquery.min.js')
+              script(src='js/jquery-migrate-3.0.1.min.js')
+              script(src='js/popper.min.js')
+              script(src='js/bootstrap.min.js')
+              script(src='js/jquery.easing.1.3.js')
+              script(src='js/jquery.waypoints.min.js')
+              script(src='js/jquery.stellar.min.js')
+              script(src='js/owl.carousel.min.js')
+              script(src='js/jquery.magnific-popup.min.js')
+              script(src='js/aos.js')
+              script(src='js/jquery.animateNumber.min.js')
+              script(src='js/bootstrap-datepicker.js')
+              script(src='js/scrollax.min.js')
+              script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+              script(src='js/google-map.js')
+              script(src='js/main.js')
